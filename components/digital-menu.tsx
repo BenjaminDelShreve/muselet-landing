@@ -420,15 +420,15 @@ function MenuSubNavigation() {
       const duration = 1200 // Same duration as main nav (1.2 seconds)
       let startTime: number | null = null
       
-      const easeInOutCubic = (t: number): number => {
-        return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1
+      const easeOutSine = (t: number): number => {
+        return Math.sin((t * Math.PI) / 2)
       }
       
       const animateScroll = (currentTime: number) => {
         if (startTime === null) startTime = currentTime
         const timeElapsed = currentTime - startTime
         const progress = Math.min(timeElapsed / duration, 1)
-        const ease = easeInOutCubic(progress)
+        const ease = easeOutSine(progress)
         
         window.scrollTo(0, startPosition + distance * ease)
         
