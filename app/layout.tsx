@@ -6,26 +6,17 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata = {
-  metadataBase: new URL("https://your-vercel-domain.vercel.app"), // 👈 we’ll update this later
+  metadataBase: new URL("https://your-vercel-domain.vercel.app"), // 👈 we'll update this later
   title: "Muselet Champagne Bar",
   description: "Champagne, caviar, and elegance in the heart of Bentonville.",
   openGraph: {
     title: "Muselet Champagne Bar",
     description: "Explore our curated champagne menu and reserve your table.",
-    images: [
-      {
-        url: "/muselet-preview.png", // 👈 your preview image
-        width: 1200,
-        height: 630,
-        alt: "Muselet Champagne Bar preview",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Muselet Champagne Bar",
     description: "Bentonville's premiere champagne destination.",
-    images: ["/muselet-preview.png"],
   },
 };
 
