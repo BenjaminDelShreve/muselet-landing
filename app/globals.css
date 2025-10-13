@@ -122,6 +122,12 @@
   }
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 120px; /* Add padding for fixed navigation */
+  }
+  
+  /* Slower, more elegant scroll behavior */
+  * {
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground;

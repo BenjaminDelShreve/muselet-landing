@@ -19,9 +19,12 @@ export function Navigation() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      const navHeight = 100 // Account for fixed navigation bar
+      const elementPosition = element.offsetTop - navHeight
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
       })
     }
   }
