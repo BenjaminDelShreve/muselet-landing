@@ -414,10 +414,10 @@ function MenuSubNavigation() {
       const elementRect = element.getBoundingClientRect()
       const elementPosition = elementRect.top + window.pageYOffset - totalOffset
       
-      // Slower, more elegant scroll with custom timing
+      // Use the same scroll behavior as main navigation
       const startPosition = window.pageYOffset
       const distance = elementPosition - startPosition
-      const duration = 1200 // Slower scroll duration (1.2 seconds)
+      const duration = 1200 // Same duration as main nav (1.2 seconds)
       let startTime: number | null = null
       
       const easeInOutCubic = (t: number): number => {
