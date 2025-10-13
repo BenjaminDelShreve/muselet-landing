@@ -14,15 +14,23 @@ export const metadata = {
     description: "Explore our curated champagne menu and reserve your table.",
     type: "website",
     locale: "en_US",
+    siteName: "Muselet Champagne Bar",
+    url: "https://your-vercel-domain.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
     title: "Muselet Champagne Bar",
     description: "Bentonville's premiere champagne destination.",
+    site: "@muselet",
   },
   robots: {
     index: true,
     follow: true,
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:type": "image/png",
   },
 };
 

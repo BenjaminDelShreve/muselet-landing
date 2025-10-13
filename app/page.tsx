@@ -14,6 +14,18 @@ export const metadata: Metadata = {
     title: "Muselet Champagne Bar",
     description: "Bentonville's premier champagne destination. Reserve your table today.",
     type: "website",
+    siteName: "Muselet Champagne Bar",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Muselet Champagne Bar",
+    description: "Bentonville's premier champagne destination. Reserve your table today.",
+  },
+  other: {
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:type": "image/png",
   },
 }
 
