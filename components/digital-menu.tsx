@@ -21,10 +21,124 @@ export function DigitalMenu() {
           The Muselet Menu
         </motion.h2>
 
+        {/* Menu Sub-Navigation */}
+        <MenuSubNavigation />
+
         {/* Menu Grid */}
         <div className="max-w-4xl mx-auto space-y-16">
+          {/* BY THE BOTTLE */}
+          <MenuSection title="By the Bottle" id="by-the-bottle">
+            {/* Champagne: By Sub-Region */}
+            <div className="space-y-6">
+              <h4 className="font-serif text-xl text-primary border-b border-secondary pb-1 mb-4">Champagne: By Sub-Region</h4>
+              
+              <div className="space-y-4">
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Côte des Blancs</h5>
+                  <MenuItem name="Gimonnet Special Club 2016" price="180" />
+                  <MenuItem name="A. Margaine Special Club 2018" price="160" />
+                  <MenuItem name="Dom Pérignon 2015" price="450" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Montagne de Reims</h5>
+                  <MenuItem name="Clotilde Grand Cru" price="120" />
+                  <MenuItem name="Paul Barthelot Les Marquise" price="140" />
+                  <MenuItem name="Vilmart Rosé Emotion 2015" price="200" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Vallée de la Marne</h5>
+                  <MenuItem name="Moussé Les Fortes Terres 2018" price="130" />
+                  <MenuItem name="Champagne Geoffroy Rosé de Saignée" price="150" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Côte des Bar / Aube</h5>
+                  <MenuItem name="Remi Leroy Extra Brut" price="110" />
+                  <MenuItem name="Remi Leroy Rosé" price="125" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Multi-Regional Blends</h5>
+                  <MenuItem name="Krug 172ème Edition" price="400" />
+                  <MenuItem name="Ruinart Blanc de Blancs" price="180" />
+                  <MenuItem name="Laurent Perrier Grand Siècle" price="300" />
+                  <MenuItem name="Marc Hébrart Special Club 2019" price="160" />
+                  <MenuItem name="Julliet Lallament Special Club 2016" price="170" />
+                  <MenuItem name="Nominé Renard Special Club 2017" price="165" />
+                </div>
+              </div>
+            </div>
+
+            {/* Still White Wines: By Region */}
+            <div className="space-y-6">
+              <h4 className="font-serif text-xl text-primary border-b border-secondary pb-1 mb-4">Still White Wines: By Region</h4>
+              
+              <div className="space-y-4">
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Germany (Riesling)</h5>
+                  <MenuItem name="Wagner Stempel Höllberg GG Riesling 2023" price="85" />
+                  <MenuItem name="JJ Prüm Graacher Himmelreich Auslese 2011" price="120" />
+                  <MenuItem name="Wegeler Winkel Jesuitgarten Auslese 1993" price="200" />
+                  <MenuItem name="Schnaitmann Lämmer Riesling 2011" price="75" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Spain (White Rioja)</h5>
+                  <MenuItem name="Lopez de Heredia Viña Tondonia White Rioja 2013" price="95" />
+                  <MenuItem name="Lopez de Heredia Viña Gravonia White Rioja 2016" price="80" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">France (Bandol)</h5>
+                  <MenuItem name="Domaine Tempier Bandol Blanc 2024" price="90" />
+                </div>
+              </div>
+            </div>
+
+            {/* Still Rosé Wines: By Region */}
+            <div className="space-y-6">
+              <h4 className="font-serif text-xl text-primary border-b border-secondary pb-1 mb-4">Still Rosé Wines: By Region</h4>
+              
+              <div className="space-y-4">
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">France (Provence)</h5>
+                  <MenuItem name="Clos Cibonne Rosé 2023" price="65" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">France (Rhône - Tavel)</h5>
+                  <MenuItem name="Château de Trinquevedel Tavel Rosé 2024" price="70" />
+                </div>
+              </div>
+            </div>
+
+            {/* Still Red Wines: By Region */}
+            <div className="space-y-6">
+              <h4 className="font-serif text-xl text-primary border-b border-secondary pb-1 mb-4">Still Red Wines: By Region</h4>
+              
+              <div className="space-y-4">
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Spain (Rioja)</h5>
+                  <MenuItem name="Remelluri Rioja Reserva 2016" price="110" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">Italy (Barolo)</h5>
+                  <MenuItem name="Oddero Barolo 2021" price="150" />
+                </div>
+                
+                <div>
+                  <h5 className="font-serif text-lg text-foreground mb-2">USA (Napa)</h5>
+                  <MenuItem name="Hourglass HG3 Red Blend" price="180" />
+                </div>
+              </div>
+            </div>
+          </MenuSection>
+
           {/* CHAMPAGNE */}
-          <MenuSection title="Champagne">
+          <MenuSection title="Champagne" id="champagne">
             <MenuItem
               name="Pierre Gimonnet Premier Cru"
               description="lemon zest, green apple, almond · côte de blanc, fr"
@@ -58,7 +172,7 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* NOT CHAMPAGNE */}
-          <MenuSection title="Not Champagne">
+          <MenuSection title="Not Champagne" id="not-champagne">
             <MenuItem
               name="Von Winning Sekt"
               description="green apple, white peach, wet stone · pfalz, ge"
@@ -92,7 +206,7 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* ROSÉ */}
-          <MenuSection title="Rosé">
+          <MenuSection title="Rosé" id="rose">
             <MenuItem
               name="Château Trinquevedel Tavel"
               description="watermelon, cherry, spice · tavel, fr"
@@ -102,7 +216,7 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* WHITE */}
-          <MenuSection title="White">
+          <MenuSection title="White" id="white">
             <MenuItem
               name="Royal Tokaji Furmint"
               description="apricot, lemon zest, wet stone · tokaj, hu"
@@ -131,7 +245,7 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* RED */}
-          <MenuSection title="Red">
+          <MenuSection title="Red" id="red">
             <MenuItem
               name="Chanrion Côte de Brouilly"
               description="raspberry, cherry, violet · beaujolais, fr"
@@ -160,14 +274,14 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* FLIGHTS */}
-          <MenuSection title="Flights">
+          <MenuSection title="Flights" id="flights">
             <MenuItem name="Champagne" description="doyard, gosset, gimonnet" price="45" />
             <MenuItem name="World Tour" description="von winning sekt, tapiz torrontés, bisol crede" price="20" />
             <MenuItem name="Wildcard" description="server's choice" price="35" />
           </MenuSection>
 
           {/* BEER & CIDER */}
-          <MenuSection title="Beer & Cider">
+          <MenuSection title="Beer & Cider" id="beer-cider">
             <MenuItem name="Kronenbourg Blanc" price="6" />
             <MenuItem name="Miller High Life" price="5" />
             <MenuItem name="Montucky Cold Snack" price="6" />
@@ -178,7 +292,7 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* CAVIAR */}
-          <MenuSection title="Caviar">
+          <MenuSection title="Caviar" id="caviar">
             <MenuItem name="Ossetra 30g" description="nutty, firm, buttery" price="120" />
             <MenuItem name="Kaluga 30g" description="large, briny, creamy" price="100" />
             <MenuItem name="Bong & a Bump" description="chambong and a bump of caviar" price="18" />
@@ -190,7 +304,7 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* SHAREABLES */}
-          <MenuSection title="Shareables">
+          <MenuSection title="Shareables" id="shareables">
             <MenuItem name="Oyster Service" description="mignonette, lacto-fermented hot sauce" price="mkt" />
             <MenuItem
               name="Better Popcorn"
@@ -209,7 +323,7 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* AFTER DINNER */}
-          <MenuSection title="After Dinner">
+          <MenuSection title="After Dinner" id="after-dinner">
             <MenuItem
               name="Fernando de Castilla Palo Cortado Antique"
               description="dried fruits, marzipan, hazelnut, jerez, es"
@@ -228,7 +342,7 @@ export function DigitalMenu() {
           </MenuSection>
 
           {/* DESSERT */}
-          <MenuSection title="Dessert">
+          <MenuSection title="Dessert" id="dessert">
             <MenuItem name="Chocolate Torte" description="coulis, sea salt, crunch" price="12" />
           </MenuSection>
         </div>
@@ -237,13 +351,14 @@ export function DigitalMenu() {
   )
 }
 
-function MenuSection({ title, children }: { title: string; children: React.ReactNode }) {
+function MenuSection({ title, children, id }: { title: string; children: React.ReactNode; id?: string }) {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   return (
     <motion.div
       ref={ref}
+      id={id}
       initial={{ opacity: 0, y: 30 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
       transition={{ duration: 0.5 }}
@@ -283,6 +398,66 @@ function MenuItem({ name, description, price }: { name: string; description?: st
           )}
         </div>
         <span className="font-serif text-lg text-accent whitespace-nowrap font-medium">{price}</span>
+      </div>
+    </motion.div>
+  )
+}
+
+function MenuSubNavigation() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId)
+    if (element) {
+      const mainNavHeight = 100 // Account for fixed main navigation bar
+      const subNavHeight = 100 // Account for sticky sub-navigation bar
+      const extraPadding = 40 // Extra spacing for better visibility
+      const totalOffset = mainNavHeight + subNavHeight + extraPadding
+      const elementRect = element.getBoundingClientRect()
+      const elementPosition = elementRect.top + window.pageYOffset - totalOffset
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      })
+    } else {
+      console.log(`Element with ID ${sectionId} not found`)
+    }
+  }
+
+  const menuItems = [
+    { label: "By the Bottle", id: "by-the-bottle" },
+    { label: "Champagne", id: "champagne" },
+    { label: "Not Champagne", id: "not-champagne" },
+    { label: "Rosé", id: "rose" },
+    { label: "White", id: "white" },
+    { label: "Red", id: "red" },
+    { label: "Flights", id: "flights" },
+    { label: "Beer & Cider", id: "beer-cider" },
+    { label: "Caviar", id: "caviar" },
+    { label: "Shareables", id: "shareables" },
+    { label: "After Dinner", id: "after-dinner" },
+    { label: "Dessert", id: "dessert" }
+  ]
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="sticky top-20 z-40 mb-16"
+    >
+      <div className="bg-background/95 backdrop-blur-md border border-secondary/20 rounded-lg p-4 shadow-lg">
+        <div className="flex flex-wrap justify-center gap-2 md:gap-4">
+          {menuItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className="px-3 py-2 text-sm font-serif text-primary hover:text-accent hover:bg-secondary/10 rounded-md transition-all duration-300 hover:scale-105 whitespace-nowrap"
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
       </div>
     </motion.div>
   )

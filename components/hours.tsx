@@ -10,7 +10,7 @@ export function Hours() {
   ]
 
   return (
-    <section className="py-24 bg-[#063B29]">
+    <section id="hours" className="py-24 bg-[#063B29]">
       <div className="container mx-auto px-6">
         <h2
           className="text-5xl md:text-6xl font-light mb-16 text-[#FDF8F0] text-center"

@@ -71,6 +71,12 @@ export function Navigation() {
             Reservations
           </Link>
           <button
+            onClick={() => scrollToSection('hours')}
+            className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase"
+          >
+            Hours
+          </button>
+          <button
             onClick={() => scrollToSection('contact')}
             className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase"
           >
