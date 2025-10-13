@@ -12,11 +12,17 @@ export const metadata = {
   openGraph: {
     title: "Muselet Champagne Bar",
     description: "Explore our curated champagne menu and reserve your table.",
+    type: "website",
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Muselet Champagne Bar",
     description: "Bentonville's premiere champagne destination.",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

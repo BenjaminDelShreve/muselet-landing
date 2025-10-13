@@ -5,6 +5,17 @@ import { DigitalMenu } from "@/components/digital-menu"
 import { Hours } from "@/components/hours"
 import { Footer } from "@/components/footer"
 import { Bubbles } from "@/components/bubbles"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Muselet Champagne Bar - Bentonville's Premier Champagne Destination",
+  description: "Experience the finest champagne and caviar in Bentonville, Arkansas. Reserve your table for an intimate champagne experience.",
+  openGraph: {
+    title: "Muselet Champagne Bar",
+    description: "Bentonville's premier champagne destination. Reserve your table today.",
+    type: "website",
+  },
+}
 
 export default function Home() {
   return (
