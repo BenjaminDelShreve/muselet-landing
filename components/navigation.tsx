@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,6 +67,7 @@ export function Navigation() {
           />
         </Link>
 
+        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <button
             onClick={() => scrollToSection('home')}
@@ -107,7 +109,8 @@ export function Navigation() {
           </button>
         </div>
 
-        <Button asChild className="bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#AF911C]/25">
+        {/* Desktop Reserve Button */}
+        <Button asChild className="hidden md:flex bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#AF911C]/25">
           <Link
             href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
             target="_blank"
@@ -116,7 +119,104 @@ export function Navigation() {
             Reserve Now
           </Link>
         </Button>
+
+        {/* Mobile Hamburger Menu Button */}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="md:hidden flex flex-col items-center justify-center w-8 h-8 space-y-1"
+          aria-label="Toggle mobile menu"
+        >
+          <span
+            className={`w-6 h-0.5 bg-[#FDF8F0] transition-all duration-300 ${
+              isMobileMenuOpen ? "rotate-45 translate-y-1.5" : ""
+            }`}
+          />
+          <span
+            className={`w-6 h-0.5 bg-[#FDF8F0] transition-all duration-300 ${
+              isMobileMenuOpen ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`w-6 h-0.5 bg-[#FDF8F0] transition-all duration-300 ${
+              isMobileMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
+            }`}
+          />
+        </button>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 right-0 bg-[#063B29]/98 backdrop-blur-md border-t border-[#AF911C]/20">
+          <div className="container mx-auto px-6 py-6 space-y-4">
+            <button
+              onClick={() => {
+                scrollToSection('home')
+                setIsMobileMenuOpen(false)
+              }}
+              className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
+            >
+              Home
+            </button>
+            <button
+              onClick={() => {
+                scrollToSection('about')
+                setIsMobileMenuOpen(false)
+              }}
+              className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
+            >
+              About
+            </button>
+            <button
+              onClick={() => {
+                scrollToSection('menu')
+                setIsMobileMenuOpen(false)
+              }}
+              className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
+            >
+              Menu
+            </button>
+            <Link
+              href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Reservations
+            </Link>
+            <button
+              onClick={() => {
+                scrollToSection('hours')
+                setIsMobileMenuOpen(false)
+              }}
+              className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
+            >
+              Hours
+            </button>
+            <button
+              onClick={() => {
+                scrollToSection('contact')
+                setIsMobileMenuOpen(false)
+              }}
+              className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
+            >
+              Contact
+            </button>
+            <div className="pt-4 border-t border-[#AF911C]/20">
+              <Button asChild className="w-full bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide transition-all duration-300">
+                <Link
+                  href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Reserve Now
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
