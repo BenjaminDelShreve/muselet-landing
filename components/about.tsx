@@ -53,8 +53,13 @@ export function About() {
 
         {/* Aaron Countryside Image */}
         <div className="mt-8">
-          <div className="relative h-[600px] rounded-sm overflow-hidden">
-            <Image src="/menu/aaron-muselet-countryside.jpg" alt="Aaron in the countryside" fill className="object-cover" />
+          <div className="relative h-[400px] md:h-[600px] rounded-sm overflow-hidden">
+            <Image 
+              src="/menu/aaron-muselet-countryside.jpg" 
+              alt="Aaron in the countryside" 
+              fill 
+              className="object-contain md:object-cover object-center" 
+            />
           </div>
         </div>
 
