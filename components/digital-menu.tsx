@@ -4,7 +4,7 @@ import type React from "react"
 
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
-import { useRef } from "react"
+import { useRef, useState, useEffect } from "react"
 
 export function DigitalMenu() {
   return (
@@ -404,6 +404,34 @@ function MenuItem({ name, description, price }: { name: string; description?: st
 }
 
 function MenuSubNavigation() {
+  const [isVisible, setIsVisible] = useState(true)
+  const [lastScrollY, setLastScrollY] = useState(0)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      
+      // Only apply hide/show behavior on mobile and tablet (below lg breakpoint)
+      if (window.innerWidth < 1024) {
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+          // Scrolling down - hide sub-nav
+          setIsVisible(false)
+        } else {
+          // Scrolling up - show sub-nav
+          setIsVisible(true)
+        }
+      } else {
+        // Always visible on desktop
+        setIsVisible(true)
+      }
+      
+      setLastScrollY(currentScrollY)
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [lastScrollY])
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -464,7 +492,11 @@ function MenuSubNavigation() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="sticky top-20 z-40 mb-16"
+      className={`sticky top-20 z-40 mb-16 transition-all duration-500 ease-in-out ${
+        isVisible 
+          ? 'translate-y-0 opacity-100' 
+          : 'lg:translate-y-0 lg:opacity-100 -translate-y-full opacity-0'
+      }`}
     >
       <div className="bg-background/95 backdrop-blur-md border border-secondary/20 rounded-lg p-4 shadow-lg">
         <div className="flex flex-wrap justify-center gap-2 md:gap-4">
