@@ -35,21 +35,21 @@ export function DigitalMenu() {
               <div className="space-y-4">
                 <div>
                   <h5 className="font-serif text-lg text-foreground mb-2">Côte des Blancs</h5>
-                  <MenuItem name="Gimonnet Special Club 2016" price="180" />
-                  <MenuItem name="A. Margaine Special Club 2018" price="160" />
-                  <MenuItem name="Dom Pérignon 2015" price="450" />
+                  <MenuItem name="Gimonnet Special Club 2016" price="225" />
+                  <MenuItem name="A. Margaine Special Club 2018" price="225" />
+                  <MenuItem name="Dom Pérignon 2015" price="300" />
                 </div>
                 
                 <div>
                   <h5 className="font-serif text-lg text-foreground mb-2">Montagne de Reims</h5>
                   <MenuItem name="Clotilde Grand Cru" price="120" />
                   <MenuItem name="Paul Barthelot Les Marquise" price="140" />
-                  <MenuItem name="Vilmart Rosé Emotion 2015" price="200" />
+                  <MenuItem name="Vilmart Rosé Emotion 2015" price="360" />
                 </div>
                 
                 <div>
                   <h5 className="font-serif text-lg text-foreground mb-2">Vallée de la Marne</h5>
-                  <MenuItem name="Moussé Les Fortes Terres 2018" price="130" />
+                  <MenuItem name="Moussé Les Fortes Terres 2018" price="280" />
                   <MenuItem name="Champagne Geoffroy Rosé de Saignée" price="150" />
                 </div>
                 
@@ -61,7 +61,7 @@ export function DigitalMenu() {
                 
                 <div>
                   <h5 className="font-serif text-lg text-foreground mb-2">Multi-Regional Blends</h5>
-                  <MenuItem name="Krug 172ème Edition" price="400" />
+                  <MenuItem name="Krug 172ème Edition" price="300" />
                   <MenuItem name="Ruinart Blanc de Blancs" price="180" />
                   <MenuItem name="Laurent Perrier Grand Siècle" price="300" />
                   <MenuItem name="Marc Hébrart Special Club 2019" price="160" />
@@ -109,7 +109,7 @@ export function DigitalMenu() {
                 
                 <div>
                   <h5 className="font-serif text-lg text-foreground mb-2">France (Rhône - Tavel)</h5>
-                  <MenuItem name="Château de Trinquevedel Tavel Rosé 2024" price="70" />
+                  <MenuItem name="Château de Trinquevedel Tavel Rosé 2024" price="60" />
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ export function DigitalMenu() {
                 
                 <div>
                   <h5 className="font-serif text-lg text-foreground mb-2">USA (Napa)</h5>
-                  <MenuItem name="Hourglass HG3 Red Blend" price="180" />
+                  <MenuItem name="Hourglass HG3 Red Blend" price="90" />
                 </div>
               </div>
             </div>
