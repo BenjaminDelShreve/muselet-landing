@@ -35,9 +35,7 @@ export function Hero() {
           className="bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide text-lg px-12 py-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#AF911C]/25"
         >
           <Link
-            href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/reservations"
           >
             Reserve Your Table
           </Link>

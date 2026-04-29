@@ -87,12 +87,7 @@ export function Navigation() {
           >
             Menu
           </button>
-          <Link
-            href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase"
-          >
+          <Link href="/reservations" className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase">
             Reservations
           </Link>
           <button
@@ -111,11 +106,7 @@ export function Navigation() {
 
         {/* Desktop Reserve Button */}
         <Button asChild className="hidden md:flex bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#AF911C]/25">
-          <Link
-            href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href="/reservations">
             Reserve Now
           </Link>
         </Button>
@@ -176,9 +167,7 @@ export function Navigation() {
               Menu
             </button>
             <Link
-              href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/reservations"
               className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -205,9 +194,7 @@ export function Navigation() {
             <div className="pt-4 border-t border-[#AF911C]/20">
               <Button asChild className="w-full bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide transition-all duration-300">
                 <Link
-                  href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/reservations"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Reserve Now

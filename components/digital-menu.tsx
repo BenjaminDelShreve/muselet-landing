@@ -140,19 +140,19 @@ export function DigitalMenu() {
           {/* CHAMPAGNE */}
           <MenuSection title="Champagne" id="champagne">
             <MenuItem
-              name="Pierre Gimonnet Premier Cru"
-              description="lemon zest, green apple, almond · côte de blanc, fr"
-              price="32 / 120"
+              name="Perrier Jouet Brut"
+              description="lemon zest, gardenia, white peach · côte de blanc, fr"
+              price="28 / 99"
             />
             <MenuItem
-              name="Laurent Perrier Cuvée Rosé"
-              description="red currant, rose petal, white pepper · montagne de reims, fr"
+              name="Taittinger Prestige Rosé"
+              description="wild strawberry, rose petal, raspberry crumble · montagne de reims, fr"
               price="38 / 140"
             />
             <MenuItem
-              name="Gosset Grand Reserve Brut"
-              description="ripe apple, toasted brioche, honey · aÿ, vallée de la marne, fr"
-              price="28 / 100"
+              name="Ayala Brut Majeur"
+              description="lemon zest, gardenia, white peach · aÿ, vallée de la marne, fr"
+              price="30 / 120"
             />
             <MenuItem
               name="Doyard Vendémiaire Blanc de Blanc"
@@ -160,8 +160,8 @@ export function DigitalMenu() {
               price="35 / 130"
             />
             <MenuItem
-              name="Gaston Chiquet Special Club 2015"
-              description="baked apple, hazelnut, lemon curd · vallée de la marne, fr"
+              name="Legras & Haas Exigence no.9"
+              description="brioche, peach tart, honeysuckle · côte de blanc, fr"
               price="45 / 180"
             />
             <MenuItem
@@ -174,9 +174,9 @@ export function DigitalMenu() {
           {/* NOT CHAMPAGNE */}
           <MenuSection title="Not Champagne" id="not-champagne">
             <MenuItem
-              name="Von Winning Sekt"
-              description="green apple, white peach, wet stone · pfalz, ge"
-              price="14 / 60"
+              name="Avinyó Reserva Cava 2021"
+              description="green apple, brioche, wet stone · penedes, es"
+              price="17 / 70"
             />
             <MenuItem
               name="Le Coeur de la Reine Crémant de Loire"
@@ -189,14 +189,14 @@ export function DigitalMenu() {
               price="14 / 60"
             />
             <MenuItem
-              name="Huber Rosé"
-              description="sour cherry, fresh strawberry, pepper · traisental valley, at"
+              name="JCB Caviar Crémant de Bourgogne"
+              description="white blossoms, green apple, brioche · burgundy, fr"
               price="15 / 65"
             />
             <MenuItem
-              name="Luigi Giordano Brut Nature Rosé"
-              description="smarties, strawberry, dried rose · barbaresco, it"
-              price="20 / 85"
+              name="Terrazze dell'Etna Rosé"
+              description="pomegranate, raspberry, herbaceous · etna, sicily, it"
+              price="17 / 70"
             />
             <MenuItem
               name="Tapiz Torrontés"
@@ -208,19 +208,19 @@ export function DigitalMenu() {
           {/* ROSÉ */}
           <MenuSection title="Rosé" id="rose">
             <MenuItem
-              name="Château Trinquevedel Tavel"
+              name="Château de Ségrièse Tavel"
               description="watermelon, cherry, spice · tavel, fr"
-              price="16 / 60"
+              price="18 / 72"
             />
-            <MenuItem name="Unalou" description="strawberry, citrus, saline · napa valley, ca" price="14 / 58" />
+            <MenuItem name="Matthiasson Rosé" description="strawberry, citrus, saline · napa valley, ca" price="16 / 64" />
           </MenuSection>
 
           {/* WHITE */}
           <MenuSection title="White" id="white">
             <MenuItem
-              name="Royal Tokaji Furmint"
-              description="apricot, lemon zest, wet stone · tokaj, hu"
-              price="13 / 55"
+              name="Ridge Grenache Blanc"
+              description="apricot, lemon zest, jasmine · paso robles, ca"
+              price="22 / 84"
             />
             <MenuItem
               name="Angelo Negro Roero Arneis"
@@ -228,33 +228,33 @@ export function DigitalMenu() {
               price="12 / 50"
             />
             <MenuItem
-              name="Heidi Schrock More is More"
-              description="grapefruit, white flower, hay · burgenland, at"
-              price="14 / 70"
+              name="Trimbach Reserve Pinot Gris"
+              description="d'anjou pear, quince, saline · alsace, fr"
+              price="20 / 80"
             />
             <MenuItem
-              name="La Spinetta Timorasso"
-              description="bergamot, aromatic herbs, acacia honey · colli tortonesi doc, it"
-              price="16 / 75"
-            />
-            <MenuItem
-              name="Bedrock Sauvignon Blanc"
-              description="grapefruit, passion fruit, green apple · sonoma, ca"
-              price="18 / 80"
+              name="Giacometto Bruno Erbaluce di Caluso"
+              description="flint, white flower, green apple · caluso, it"
+              price="18 / 72"
             />
           </MenuSection>
 
           {/* RED */}
           <MenuSection title="Red" id="red">
             <MenuItem
-              name="Chanrion Côte de Brouilly"
-              description="raspberry, cherry, violet · beaujolais, fr"
-              price="18 / 80"
+              name="Domaine de Leyre-Loup Morgon"
+              description="plum, cherry, forest floor · beaujolais, fr"
+              price="18 / 72"
             />
             <MenuItem
-              name="Kaltern Lagrein"
-              description="dark plum, coffee, forest floor · alto adige, it"
-              price="12 / 50"
+              name="Brotte St. Joseph"
+              description="dark plum, olive, pepper · rhone, fr"
+              price="18 / 72"
+            />
+            <MenuItem
+              name="Poggio del Moro Chianti Riserva"
+              description="dried cherry, earth, tobacco · tuscany, it"
+              price="16 / 64"
             />
             <MenuItem
               name="Angelo Negro Barbaresco"
@@ -264,12 +264,12 @@ export function DigitalMenu() {
             <MenuItem
               name="Hourglass HGIII"
               description="bing cherry, mocha, pink peppercorn · napa valley, ca"
-              price="20 / 90"
+              price="20 / 80"
             />
             <MenuItem
-              name="No Brainer Merlot"
-              description="black cherry, plum, dark chocolate · dry creek valley, ca"
-              price="16 / 65"
+              name="Double Diamond Cabernet Sauvignon"
+              description="cassis, dark chocolate, graphite · napa valley, ca"
+              price="32 / 110"
             />
           </MenuSection>
 
@@ -441,31 +441,11 @@ function MenuSubNavigation() {
       const totalOffset = mainNavHeight + subNavHeight + extraPadding
       const elementRect = element.getBoundingClientRect()
       const elementPosition = elementRect.top + window.pageYOffset - totalOffset
-      
-      // Use the same scroll behavior as main navigation
-      const startPosition = window.pageYOffset
-      const distance = elementPosition - startPosition
-      const duration = 1200 // Same duration as main nav (1.2 seconds)
-      let startTime: number | null = null
-      
-      const easeOutSine = (t: number): number => {
-        return Math.sin((t * Math.PI) / 2)
-      }
-      
-      const animateScroll = (currentTime: number) => {
-        if (startTime === null) startTime = currentTime
-        const timeElapsed = currentTime - startTime
-        const progress = Math.min(timeElapsed / duration, 1)
-        const ease = easeOutSine(progress)
-        
-        window.scrollTo(0, startPosition + distance * ease)
-        
-        if (progress < 1) {
-          requestAnimationFrame(animateScroll)
-        }
-      }
-      
-      requestAnimationFrame(animateScroll)
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      })
     } else {
       console.log(`Element with ID ${sectionId} not found`)
     }

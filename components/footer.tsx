@@ -48,12 +48,7 @@ export function Footer() {
               <Link href="#menu" className="block text-[#FDF8F0]/90 hover:text-[#AF911C] transition-colors">
                 Menu
               </Link>
-              <Link
-                href="https://www.exploretock.com/muselet-champagne-bar-bentonville"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-[#FDF8F0]/90 hover:text-[#AF911C] transition-colors"
-              >
+              <Link href="/reservations" className="block text-[#FDF8F0]/90 hover:text-[#AF911C] transition-colors">
                 Reservations
               </Link>
             </div>
