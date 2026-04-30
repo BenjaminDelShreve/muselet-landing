@@ -25,35 +25,25 @@ export function Navigation() {
     if (element) {
       const navHeight = 100 // Account for fixed navigation bar
       const elementPosition = element.offsetTop - navHeight
-      
-      // Slower, more elegant scroll with custom timing
-      const startPosition = window.pageYOffset
-      const distance = elementPosition - startPosition
-      const duration = 1200 // Slower scroll duration (1.2 seconds)
-      let startTime: number | null = null
-      
-      const easeOutSine = (t: number): number => {
-        return Math.sin((t * Math.PI) / 2)
-      }
-      
-      const animateScroll = (currentTime: number) => {
-        if (startTime === null) startTime = currentTime
-        const timeElapsed = currentTime - startTime
-        const progress = Math.min(timeElapsed / duration, 1)
-        const ease = easeOutSine(progress)
-        
-        window.scrollTo(0, startPosition + distance * ease)
-        
-        if (progress < 1) {
-          requestAnimationFrame(animateScroll)
-        }
-      }
-      
-      requestAnimationFrame(animateScroll)
+
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      })
     }
   }
 
   const handleNavigation = (path: string, sectionId?: string) => {
+    if (path === "/") {
+      if (pathname === "/") {
+        // Home should jump to the top immediately.
+        window.scrollTo({ top: 0, behavior: "auto" })
+      } else {
+        router.push("/")
+      }
+      return
+    }
+
     if (pathname === "/" && sectionId) {
       scrollToSection(sectionId)
       return
