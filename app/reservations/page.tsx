@@ -21,18 +21,14 @@ export default function ReservationsPage() {
           </p>
 
           <div className="flex justify-center">
-            <div className="bg-[#FDF8F0]/95 rounded-xl p-6 shadow-xl border border-[#AF911C]/30">
-              <iframe
-                src="https://opentable.com/widget/reservation/loader?rid=1498192&type=standard&theme=standard&color=1&dark=false&iframe=true"
-                width="224"
-                height="301"
-                frameBorder="0"
-                scrolling="no"
-                name="opentable-make-reservation-widget"
-                title="OpenTable Reservation Widget"
-                className="mx-auto"
-              />
-            </div>
+            <a
+              href="https://www.opentable.com/restref/client/?rid=1498192"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide text-lg px-12 py-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#AF911C]/25 rounded-md"
+            >
+              Reserve Now
+            </a>
           </div>
         </div>
       </section>
