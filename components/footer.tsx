@@ -59,7 +59,7 @@ export function Footer() {
             <h3 className="text-xl font-medium mb-6 text-[#AF911C] tracking-wide">Follow Us</h3>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com/muselet.nwa"
+                href="https://www.instagram.com/muselet.nwa/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-[#FDF8F0]/10 hover:bg-[#AF911C] rounded-full flex items-center justify-center transition-colors"
@@ -67,7 +67,7 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="https://facebook.com/MuseletChampagneBar"
+                href="https://www.facebook.com/search/top?q=muselet%20champagne%20bar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-[#FDF8F0]/10 hover:bg-[#AF911C] rounded-full flex items-center justify-center transition-colors"

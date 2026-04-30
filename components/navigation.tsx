@@ -3,11 +3,14 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname, useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,6 +53,15 @@ export function Navigation() {
     }
   }
 
+  const handleNavigation = (path: string, sectionId?: string) => {
+    if (pathname === "/" && sectionId) {
+      scrollToSection(sectionId)
+      return
+    }
+
+    router.push(path)
+  }
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -70,19 +82,19 @@ export function Navigation() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <button
-            onClick={() => scrollToSection('home')}
+            onClick={() => handleNavigation("/")}
             className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase"
           >
             Home
           </button>
           <button
-            onClick={() => scrollToSection('about')}
+            onClick={() => handleNavigation("/#about", "about")}
             className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase"
           >
             About
           </button>
           <button
-            onClick={() => scrollToSection('menu')}
+            onClick={() => handleNavigation("/menu")}
             className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase"
           >
             Menu
@@ -91,13 +103,13 @@ export function Navigation() {
             Reservations
           </Link>
           <button
-            onClick={() => scrollToSection('hours')}
+            onClick={() => handleNavigation("/#hours", "hours")}
             className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase"
           >
             Hours
           </button>
           <button
-            onClick={() => scrollToSection('contact')}
+            onClick={() => handleNavigation("/#contact", "contact")}
             className="text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-sm tracking-wider uppercase"
           >
             Contact
@@ -141,7 +153,7 @@ export function Navigation() {
           <div className="container mx-auto px-6 py-6 space-y-4">
             <button
               onClick={() => {
-                scrollToSection('home')
+                handleNavigation("/")
                 setIsMobileMenuOpen(false)
               }}
               className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
@@ -150,7 +162,7 @@ export function Navigation() {
             </button>
             <button
               onClick={() => {
-                scrollToSection('about')
+                handleNavigation("/#about", "about")
                 setIsMobileMenuOpen(false)
               }}
               className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
@@ -159,7 +171,7 @@ export function Navigation() {
             </button>
             <button
               onClick={() => {
-                scrollToSection('menu')
+                handleNavigation("/menu")
                 setIsMobileMenuOpen(false)
               }}
               className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
@@ -175,7 +187,7 @@ export function Navigation() {
             </Link>
             <button
               onClick={() => {
-                scrollToSection('hours')
+                handleNavigation("/#hours", "hours")
                 setIsMobileMenuOpen(false)
               }}
               className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
@@ -184,7 +196,7 @@ export function Navigation() {
             </button>
             <button
               onClick={() => {
-                scrollToSection('contact')
+                handleNavigation("/#contact", "contact")
                 setIsMobileMenuOpen(false)
               }}
               className="block w-full text-left text-[#FDF8F0] hover:text-[#AF911C] transition-colors text-lg tracking-wider uppercase py-2"
