@@ -5,7 +5,10 @@ import { DigitalMenu } from "@/components/digital-menu"
 import { Hours } from "@/components/hours"
 import { Footer } from "@/components/footer"
 import { Bubbles } from "@/components/bubbles"
+import { readMenu } from "@/lib/menu"
 import type { Metadata } from "next"
+
+export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
   title: "Muselet Champagne Bar - Bentonville's Premier Champagne Destination",
@@ -29,14 +32,16 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Home() {
+export default async function Home() {
+  const menu = await readMenu()
+
   return (
     <main className="relative min-h-screen">
       <Bubbles />
       <Navigation />
       <Hero />
       <About />
-      <DigitalMenu />
+      <DigitalMenu menu={menu} />
       <Hours />
       <Footer />
     </main>
