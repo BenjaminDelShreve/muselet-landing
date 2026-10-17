@@ -5,14 +5,9 @@ import type React from "react"
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef, useState, useEffect } from "react"
-import menuJson from "@/data/menu.json"
 import type { MenuData, MenuItem as MenuItemType, MenuSection as MenuSectionType } from "@/lib/menu-types"
 
-const fallbackMenu = menuJson as MenuData
-
-export function DigitalMenu({ menu, className }: { menu?: MenuData; className?: string }) {
-  const data = menu?.sections ? menu : fallbackMenu
-
+export function DigitalMenu({ menu, className }: { menu: MenuData; className?: string }) {
   return (
     <section id="menu" className={`relative py-24 px-6 bg-background ${className ?? ""}`}>
       <div className="max-w-7xl mx-auto">
@@ -26,10 +21,10 @@ export function DigitalMenu({ menu, className }: { menu?: MenuData; className?: 
           The Muselet Menu
         </motion.h2>
 
-        <MenuSubNavigation sections={data.sections} />
+        <MenuSubNavigation sections={menu.sections} />
 
         <div className="max-w-4xl mx-auto space-y-16">
-          {data.sections.map((section) => (
+          {menu.sections.map((section) => (
             <MenuSection key={section.id} title={section.title} id={section.id}>
               {section.groups ? (
                 section.groups.map((group) => (

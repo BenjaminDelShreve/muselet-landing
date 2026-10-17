@@ -136,7 +136,7 @@ function AdminEditor({ onLogout }: { onLogout: () => void }) {
         return
       }
       setMenu(next)
-      setStatus({ type: "success", message: "Menu saved to data/menu.json" })
+      setStatus({ type: "success", message: "Menu saved to Supabase" })
     } catch {
       setStatus({ type: "error", message: "Unable to save menu" })
     } finally {
@@ -159,7 +159,7 @@ function AdminEditor({ onLogout }: { onLogout: () => void }) {
         return
       }
       setSpecials(next)
-      setStatus({ type: "success", message: "Specials saved to data/specials.json" })
+      setStatus({ type: "success", message: "Specials saved to Supabase" })
     } catch {
       setStatus({ type: "error", message: "Unable to save specials" })
     } finally {
@@ -318,7 +318,7 @@ function AdminEditor({ onLogout }: { onLogout: () => void }) {
         <div className="max-w-5xl mx-auto px-6 py-5 flex flex-wrap items-center justify-between gap-4">
           <div>
             <h1 className="font-serif text-3xl text-primary">Menu Admin</h1>
-            <p className="font-serif text-sm text-muted-foreground italic">Edit items, then save to update the JSON</p>
+            <p className="font-serif text-sm text-muted-foreground italic">Edit items, then save to update Supabase</p>
           </div>
           <div className="flex items-center gap-3">
             <a href="/menu" className="font-serif text-sm text-secondary hover:text-accent transition-colors">

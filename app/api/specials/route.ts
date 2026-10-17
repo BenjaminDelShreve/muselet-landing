@@ -6,8 +6,9 @@ export async function GET() {
   try {
     const specials = await readSpecials()
     return NextResponse.json(specials)
-  } catch {
-    return NextResponse.json({ error: "Failed to load specials" }, { status: 500 })
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Failed to load specials"
+    return NextResponse.json({ error: message }, { status: 500 })
   }
 }
 
@@ -27,10 +28,7 @@ export async function PUT(request: Request) {
     await writeSpecials(body)
     return NextResponse.json({ ok: true, specials: body })
   } catch (error) {
-    const message =
-      error instanceof Error && error.message.includes("EROFS")
-        ? "Unable to write specials file on this host. Edit locally and deploy, or use a writable filesystem."
-        : "Failed to save specials"
+    const message = error instanceof Error ? error.message : "Failed to save specials"
     return NextResponse.json({ error: message }, { status: 500 })
   }
 }

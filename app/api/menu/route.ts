@@ -6,8 +6,9 @@ export async function GET() {
   try {
     const menu = await readMenu()
     return NextResponse.json(menu)
-  } catch {
-    return NextResponse.json({ error: "Failed to load menu" }, { status: 500 })
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Failed to load menu"
+    return NextResponse.json({ error: message }, { status: 500 })
   }
 }
 
@@ -27,10 +28,7 @@ export async function PUT(request: Request) {
     await writeMenu(body)
     return NextResponse.json({ ok: true, menu: body })
   } catch (error) {
-    const message =
-      error instanceof Error && error.message.includes("EROFS")
-        ? "Unable to write menu file on this host. Edit locally and deploy, or use a writable filesystem."
-        : "Failed to save menu"
+    const message = error instanceof Error ? error.message : "Failed to save menu"
     return NextResponse.json({ error: message }, { status: 500 })
   }
 }

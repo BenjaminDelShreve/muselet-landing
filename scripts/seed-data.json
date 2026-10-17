@@ -1,0 +1,636 @@
+{
+  "menuRows": [
+    {
+      "id": "gimonnet-special-club-2016",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Côte des Blancs",
+      "name": "Gimonnet Special Club 2016",
+      "description": null,
+      "price": "225",
+      "sort_order": 0
+    },
+    {
+      "id": "a-margaine-special-club-2018",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Côte des Blancs",
+      "name": "A. Margaine Special Club 2018",
+      "description": null,
+      "price": "225",
+      "sort_order": 1
+    },
+    {
+      "id": "dom-perignon-2015",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Côte des Blancs",
+      "name": "Dom Pérignon 2015",
+      "description": null,
+      "price": "300",
+      "sort_order": 2
+    },
+    {
+      "id": "clotilde-grand-cru",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Montagne de Reims",
+      "name": "Clotilde Grand Cru",
+      "description": null,
+      "price": "120",
+      "sort_order": 3
+    },
+    {
+      "id": "paul-barthelot-les-marquise",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Montagne de Reims",
+      "name": "Paul Barthelot Les Marquise",
+      "description": null,
+      "price": "140",
+      "sort_order": 4
+    },
+    {
+      "id": "vilmart-rose-emotion-2015",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Montagne de Reims",
+      "name": "Vilmart Rosé Emotion 2015",
+      "description": null,
+      "price": "360",
+      "sort_order": 5
+    },
+    {
+      "id": "mousse-les-fortes-terres-2018",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Vallée de la Marne",
+      "name": "Moussé Les Fortes Terres 2018",
+      "description": null,
+      "price": "280",
+      "sort_order": 6
+    },
+    {
+      "id": "champagne-geoffroy-rose-de-saignee",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Vallée de la Marne",
+      "name": "Champagne Geoffroy Rosé de Saignée",
+      "description": null,
+      "price": "150",
+      "sort_order": 7
+    },
+    {
+      "id": "remi-leroy-extra-brut",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Côte des Bar / Aube",
+      "name": "Remi Leroy Extra Brut",
+      "description": null,
+      "price": "110",
+      "sort_order": 8
+    },
+    {
+      "id": "remi-leroy-rose",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Côte des Bar / Aube",
+      "name": "Remi Leroy Rosé",
+      "description": null,
+      "price": "125",
+      "sort_order": 9
+    },
+    {
+      "id": "krug-172eme-edition",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Multi-Regional Blends",
+      "name": "Krug 172ème Edition",
+      "description": null,
+      "price": "300",
+      "sort_order": 10
+    },
+    {
+      "id": "ruinart-blanc-de-blancs",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Multi-Regional Blends",
+      "name": "Ruinart Blanc de Blancs",
+      "description": null,
+      "price": "180",
+      "sort_order": 11
+    },
+    {
+      "id": "laurent-perrier-grand-siecle",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Multi-Regional Blends",
+      "name": "Laurent Perrier Grand Siècle",
+      "description": null,
+      "price": "300",
+      "sort_order": 12
+    },
+    {
+      "id": "marc-hebrart-special-club-2019",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Multi-Regional Blends",
+      "name": "Marc Hébrart Special Club 2019",
+      "description": null,
+      "price": "160",
+      "sort_order": 13
+    },
+    {
+      "id": "julliet-lallament-special-club-2016",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Multi-Regional Blends",
+      "name": "Julliet Lallament Special Club 2016",
+      "description": null,
+      "price": "170",
+      "sort_order": 14
+    },
+    {
+      "id": "nomine-renard-special-club-2017",
+      "section": "By the Bottle|||Champagne: By Sub-Region|||Multi-Regional Blends",
+      "name": "Nominé Renard Special Club 2017",
+      "description": null,
+      "price": "165",
+      "sort_order": 15
+    },
+    {
+      "id": "wagner-stempel-hollberg-gg-riesling-2023",
+      "section": "By the Bottle|||Still White Wines: By Region|||Germany (Riesling)",
+      "name": "Wagner Stempel Höllberg GG Riesling 2023",
+      "description": null,
+      "price": "85",
+      "sort_order": 16
+    },
+    {
+      "id": "jj-prum-graacher-himmelreich-auslese-2011",
+      "section": "By the Bottle|||Still White Wines: By Region|||Germany (Riesling)",
+      "name": "JJ Prüm Graacher Himmelreich Auslese 2011",
+      "description": null,
+      "price": "120",
+      "sort_order": 17
+    },
+    {
+      "id": "wegeler-winkel-jesuitgarten-auslese-1993",
+      "section": "By the Bottle|||Still White Wines: By Region|||Germany (Riesling)",
+      "name": "Wegeler Winkel Jesuitgarten Auslese 1993",
+      "description": null,
+      "price": "200",
+      "sort_order": 18
+    },
+    {
+      "id": "schnaitmann-lammer-riesling-2011",
+      "section": "By the Bottle|||Still White Wines: By Region|||Germany (Riesling)",
+      "name": "Schnaitmann Lämmer Riesling 2011",
+      "description": null,
+      "price": "75",
+      "sort_order": 19
+    },
+    {
+      "id": "lopez-de-heredia-vina-tondonia-white-rioja-2013",
+      "section": "By the Bottle|||Still White Wines: By Region|||Spain (White Rioja)",
+      "name": "Lopez de Heredia Viña Tondonia White Rioja 2013",
+      "description": null,
+      "price": "95",
+      "sort_order": 20
+    },
+    {
+      "id": "lopez-de-heredia-vina-gravonia-white-rioja-2016",
+      "section": "By the Bottle|||Still White Wines: By Region|||Spain (White Rioja)",
+      "name": "Lopez de Heredia Viña Gravonia White Rioja 2016",
+      "description": null,
+      "price": "80",
+      "sort_order": 21
+    },
+    {
+      "id": "domaine-tempier-bandol-blanc-2024",
+      "section": "By the Bottle|||Still White Wines: By Region|||France (Bandol)",
+      "name": "Domaine Tempier Bandol Blanc 2024",
+      "description": null,
+      "price": "90",
+      "sort_order": 22
+    },
+    {
+      "id": "clos-cibonne-rose-2023",
+      "section": "By the Bottle|||Still Rosé Wines: By Region|||France (Provence)",
+      "name": "Clos Cibonne Rosé 2023",
+      "description": null,
+      "price": "65",
+      "sort_order": 23
+    },
+    {
+      "id": "chateau-de-trinquevedel-tavel-rose-2024",
+      "section": "By the Bottle|||Still Rosé Wines: By Region|||France (Rhône - Tavel)",
+      "name": "Château de Trinquevedel Tavel Rosé 2024",
+      "description": null,
+      "price": "60",
+      "sort_order": 24
+    },
+    {
+      "id": "remelluri-rioja-reserva-2016",
+      "section": "By the Bottle|||Still Red Wines: By Region|||Spain (Rioja)",
+      "name": "Remelluri Rioja Reserva 2016",
+      "description": null,
+      "price": "110",
+      "sort_order": 25
+    },
+    {
+      "id": "oddero-barolo-2021",
+      "section": "By the Bottle|||Still Red Wines: By Region|||Italy (Barolo)",
+      "name": "Oddero Barolo 2021",
+      "description": null,
+      "price": "150",
+      "sort_order": 26
+    },
+    {
+      "id": "hourglass-hg3-red-blend",
+      "section": "By the Bottle|||Still Red Wines: By Region|||USA (Napa)",
+      "name": "Hourglass HG3 Red Blend",
+      "description": null,
+      "price": "90",
+      "sort_order": 27
+    },
+    {
+      "id": "perrier-jouet-brut",
+      "section": "Champagne",
+      "name": "Perrier Jouet Brut",
+      "description": "lemon zest, gardenia, white peach · côte de blanc, fr",
+      "price": "28 / 99",
+      "sort_order": 28
+    },
+    {
+      "id": "taittinger-prestige-rose",
+      "section": "Champagne",
+      "name": "Taittinger Prestige Rosé",
+      "description": "wild strawberry, rose petal, raspberry crumble · montagne de reims, fr",
+      "price": "38 / 140",
+      "sort_order": 29
+    },
+    {
+      "id": "ayala-brut-majeur",
+      "section": "Champagne",
+      "name": "Ayala Brut Majeur",
+      "description": "lemon zest, gardenia, white peach · aÿ, vallée de la marne, fr",
+      "price": "30 / 120",
+      "sort_order": 30
+    },
+    {
+      "id": "doyard-vendemiaire-blanc-de-blanc",
+      "section": "Champagne",
+      "name": "Doyard Vendémiaire Blanc de Blanc",
+      "description": "preserved lemon, white flower, saline · côte de blanc, fr",
+      "price": "35 / 130",
+      "sort_order": 31
+    },
+    {
+      "id": "legras-haas-exigence-no-9",
+      "section": "Champagne",
+      "name": "Legras & Haas Exigence no.9",
+      "description": "brioche, peach tart, honeysuckle · côte de blanc, fr",
+      "price": "45 / 180",
+      "sort_order": 32
+    },
+    {
+      "id": "krug-grand-cuvee-172",
+      "section": "Champagne",
+      "name": "Krug Grand Cuvée 172",
+      "description": "toasted almond, brioche, cardamom · montagne de reims, fr",
+      "price": "70 / 300",
+      "sort_order": 33
+    },
+    {
+      "id": "avinyo-reserva-cava-2021",
+      "section": "Not Champagne",
+      "name": "Avinyó Reserva Cava 2021",
+      "description": "green apple, brioche, wet stone · penedes, es",
+      "price": "17 / 70",
+      "sort_order": 34
+    },
+    {
+      "id": "le-coeur-de-la-reine-cremant-de-loire",
+      "section": "Not Champagne",
+      "name": "Le Coeur de la Reine Crémant de Loire",
+      "description": "quince, chamomile, honeysuckle · touraine, fr",
+      "price": "12 / 48",
+      "sort_order": 35
+    },
+    {
+      "id": "bisol-crede-prosecco",
+      "section": "Not Champagne",
+      "name": "Bisol Crede Prosecco",
+      "description": "ripe pear, peach blossom, green apple · valdobbiedene, it",
+      "price": "14 / 60",
+      "sort_order": 36
+    },
+    {
+      "id": "jcb-caviar-cremant-de-bourgogne",
+      "section": "Not Champagne",
+      "name": "JCB Caviar Crémant de Bourgogne",
+      "description": "white blossoms, green apple, brioche · burgundy, fr",
+      "price": "15 / 65",
+      "sort_order": 37
+    },
+    {
+      "id": "terrazze-dell-etna-rose",
+      "section": "Not Champagne",
+      "name": "Terrazze dell'Etna Rosé",
+      "description": "pomegranate, raspberry, herbaceous · etna, sicily, it",
+      "price": "17 / 70",
+      "sort_order": 38
+    },
+    {
+      "id": "tapiz-torrontes",
+      "section": "Not Champagne",
+      "name": "Tapiz Torrontés",
+      "description": "jasmine, orange blossom, lemon curd · mendoza, ar",
+      "price": "12 / 48",
+      "sort_order": 39
+    },
+    {
+      "id": "chateau-de-segriese-tavel",
+      "section": "Rosé",
+      "name": "Château de Ségrièse Tavel",
+      "description": "watermelon, cherry, spice · tavel, fr",
+      "price": "18 / 72",
+      "sort_order": 40
+    },
+    {
+      "id": "matthiasson-rose",
+      "section": "Rosé",
+      "name": "Matthiasson Rosé",
+      "description": "strawberry, citrus, saline · napa valley, ca",
+      "price": "16 / 64",
+      "sort_order": 41
+    },
+    {
+      "id": "ridge-grenache-blanc",
+      "section": "White",
+      "name": "Ridge Grenache Blanc",
+      "description": "apricot, lemon zest, jasmine · paso robles, ca",
+      "price": "22 / 84",
+      "sort_order": 42
+    },
+    {
+      "id": "angelo-negro-roero-arneis",
+      "section": "White",
+      "name": "Angelo Negro Roero Arneis",
+      "description": "pear, lime, acacia · piedmont, it",
+      "price": "12 / 50",
+      "sort_order": 43
+    },
+    {
+      "id": "trimbach-reserve-pinot-gris",
+      "section": "White",
+      "name": "Trimbach Reserve Pinot Gris",
+      "description": "d'anjou pear, quince, saline · alsace, fr",
+      "price": "20 / 80",
+      "sort_order": 44
+    },
+    {
+      "id": "giacometto-bruno-erbaluce-di-caluso",
+      "section": "White",
+      "name": "Giacometto Bruno Erbaluce di Caluso",
+      "description": "flint, white flower, green apple · caluso, it",
+      "price": "18 / 72",
+      "sort_order": 45
+    },
+    {
+      "id": "domaine-de-leyre-loup-morgon",
+      "section": "Red",
+      "name": "Domaine de Leyre-Loup Morgon",
+      "description": "plum, cherry, forest floor · beaujolais, fr",
+      "price": "18 / 72",
+      "sort_order": 46
+    },
+    {
+      "id": "brotte-st-joseph",
+      "section": "Red",
+      "name": "Brotte St. Joseph",
+      "description": "dark plum, olive, pepper · rhone, fr",
+      "price": "18 / 72",
+      "sort_order": 47
+    },
+    {
+      "id": "poggio-del-moro-chianti-riserva",
+      "section": "Red",
+      "name": "Poggio del Moro Chianti Riserva",
+      "description": "dried cherry, earth, tobacco · tuscany, it",
+      "price": "16 / 64",
+      "sort_order": 48
+    },
+    {
+      "id": "angelo-negro-barbaresco",
+      "section": "Red",
+      "name": "Angelo Negro Barbaresco",
+      "description": "raspberry, baking spice, dried rose · piedmont, it",
+      "price": "26 / 98",
+      "sort_order": 49
+    },
+    {
+      "id": "hourglass-hgiii",
+      "section": "Red",
+      "name": "Hourglass HGIII",
+      "description": "bing cherry, mocha, pink peppercorn · napa valley, ca",
+      "price": "20 / 80",
+      "sort_order": 50
+    },
+    {
+      "id": "double-diamond-cabernet-sauvignon",
+      "section": "Red",
+      "name": "Double Diamond Cabernet Sauvignon",
+      "description": "cassis, dark chocolate, graphite · napa valley, ca",
+      "price": "32 / 110",
+      "sort_order": 51
+    },
+    {
+      "id": "flight-champagne",
+      "section": "Flights",
+      "name": "Champagne",
+      "description": "doyard, gosset, gimonnet",
+      "price": "45",
+      "sort_order": 52
+    },
+    {
+      "id": "flight-world-tour",
+      "section": "Flights",
+      "name": "World Tour",
+      "description": "von winning sekt, tapiz torrontés, bisol crede",
+      "price": "20",
+      "sort_order": 53
+    },
+    {
+      "id": "flight-wildcard",
+      "section": "Flights",
+      "name": "Wildcard",
+      "description": "server's choice",
+      "price": "35",
+      "sort_order": 54
+    },
+    {
+      "id": "kronenbourg-blanc",
+      "section": "Beer & Cider",
+      "name": "Kronenbourg Blanc",
+      "description": null,
+      "price": "6",
+      "sort_order": 55
+    },
+    {
+      "id": "miller-high-life",
+      "section": "Beer & Cider",
+      "name": "Miller High Life",
+      "description": null,
+      "price": "5",
+      "sort_order": 56
+    },
+    {
+      "id": "montucky-cold-snack",
+      "section": "Beer & Cider",
+      "name": "Montucky Cold Snack",
+      "description": null,
+      "price": "6",
+      "sort_order": 57
+    },
+    {
+      "id": "eggenberg-pilsner",
+      "section": "Beer & Cider",
+      "name": "Eggenberg Pilsner",
+      "description": null,
+      "price": "6",
+      "sort_order": 58
+    },
+    {
+      "id": "space-goose-ipa",
+      "section": "Beer & Cider",
+      "name": "Space Goose IPA",
+      "description": null,
+      "price": "7",
+      "sort_order": 59
+    },
+    {
+      "id": "hawk-moth-rd",
+      "section": "Beer & Cider",
+      "name": "Hawk Moth *R&D*",
+      "description": null,
+      "price": "25",
+      "sort_order": 60
+    },
+    {
+      "id": "avail-blanc-cider",
+      "section": "Beer & Cider",
+      "name": "Avail Blanc Cider",
+      "description": null,
+      "price": "7",
+      "sort_order": 61
+    },
+    {
+      "id": "ossetra-30g",
+      "section": "Caviar",
+      "name": "Ossetra 30g",
+      "description": "nutty, firm, buttery",
+      "price": "120",
+      "sort_order": 62
+    },
+    {
+      "id": "kaluga-30g",
+      "section": "Caviar",
+      "name": "Kaluga 30g",
+      "description": "large, briny, creamy",
+      "price": "100",
+      "sort_order": 63
+    },
+    {
+      "id": "bong-and-a-bump",
+      "section": "Caviar",
+      "name": "Bong & a Bump",
+      "description": "chambong and a bump of caviar",
+      "price": "18",
+      "sort_order": 64
+    },
+    {
+      "id": "golden-nugget",
+      "section": "Caviar",
+      "name": "Golden Nugget",
+      "description": "house chicken nugget, crème fraîche, golden ossetra caviar",
+      "price": "24",
+      "sort_order": 65
+    },
+    {
+      "id": "oyster-service",
+      "section": "Shareables",
+      "name": "Oyster Service",
+      "description": "mignonette, lacto-fermented hot sauce",
+      "price": "mkt",
+      "sort_order": 66
+    },
+    {
+      "id": "better-popcorn",
+      "section": "Shareables",
+      "name": "Better Popcorn",
+      "description": "heirloom kernels, cultured butter, rotating flavors",
+      "price": "7",
+      "sort_order": 67
+    },
+    {
+      "id": "sams-caesar",
+      "section": "Shareables",
+      "name": "Sam's Caesar",
+      "description": "lemon zest, breadcrumbs, caviar caesar dressing",
+      "price": "18",
+      "sort_order": 68
+    },
+    {
+      "id": "pommes-frites",
+      "section": "Shareables",
+      "name": "Pommes Frites",
+      "description": "double fried beef tallow russets, aioli",
+      "price": "12",
+      "sort_order": 69
+    },
+    {
+      "id": "rotating-deviled-eggs",
+      "section": "Shareables",
+      "name": "Rotating Deviled Eggs",
+      "description": "local egg, kewpi, smoked spanish paprika",
+      "price": "14",
+      "sort_order": 70
+    },
+    {
+      "id": "arancini",
+      "section": "Shareables",
+      "name": "Arancini",
+      "description": "peas, taleggio, mint",
+      "price": "15",
+      "sort_order": 71
+    },
+    {
+      "id": "fried-chicken",
+      "section": "Shareables",
+      "name": "Fried Chicken",
+      "description": "tallow fried local chicken, gluten free breading, slaw",
+      "price": "28",
+      "sort_order": 72
+    },
+    {
+      "id": "fernando-de-castilla-palo-cortado-antique",
+      "section": "After Dinner",
+      "name": "Fernando de Castilla Palo Cortado Antique",
+      "description": "dried fruits, marzipan, hazelnut, jerez, es",
+      "price": "18",
+      "sort_order": 73
+    },
+    {
+      "id": "fernando-de-castilla-amontillado-antique",
+      "section": "After Dinner",
+      "name": "Fernando de Castilla Amontillado Antique",
+      "description": "toffee, golden raisin, coffee, jerez, es",
+      "price": "14",
+      "sort_order": 74
+    },
+    {
+      "id": "fernando-de-castilla-pedro-ximenez-antique",
+      "section": "After Dinner",
+      "name": "Fernando de Castilla Pedro Ximénez Antique",
+      "description": "fruit cake, dark chocolate, sweet tobacco, jerez, es",
+      "price": "10",
+      "sort_order": 75
+    },
+    {
+      "id": "chocolate-torte",
+      "section": "Dessert",
+      "name": "Chocolate Torte",
+      "description": "coulis, sea salt, crunch",
+      "price": "12",
+      "sort_order": 76
+    }
+  ],
+  "specialRows": [
+    {
+      "id": "weekend-grower-flight",
+      "name": "Grower Champagne Flight",
+      "description": "three pours from small-house producers · rotating selection",
+      "price": "55",
+      "sort_order": 0
+    },
+    {
+      "id": "weekend-caviar-toast",
+      "name": "Caviar & Brioche Toast",
+      "description": "kaluga, crème fraîche, chives · for two",
+      "price": "48",
+      "sort_order": 1
+    }
+  ]
+}
