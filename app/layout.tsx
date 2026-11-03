@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 
 import "./globals.css"
+import { buildLocalBusinessSchema } from "@/lib/structured-data"
 
 export const metadata = {
   metadataBase: new URL("https://your-vercel-domain.vercel.app"), // 👈 we'll update this later
@@ -50,6 +51,10 @@ export default function RootLayout({
         />
       </head>
       <body className="font-serif antialiased" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildLocalBusinessSchema()).replace(/</g, "\\u003c") }}
+        />
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>
