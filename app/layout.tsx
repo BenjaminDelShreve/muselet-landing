@@ -4,24 +4,24 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 
 import "./globals.css"
+import { buildLocalBusinessSchema } from "@/lib/structured-data"
 
 export const metadata = {
-  metadataBase: new URL("https://your-vercel-domain.vercel.app"), // 👈 we'll update this later
-  title: "Muselet Champagne Bar",
-  description: "Champagne, caviar, and elegance in the heart of Bentonville.",
+  metadataBase: new URL("https://www.museletchampagnebar.com"),
+  title: "Muselet | Champagne Bar & Kitchen in Downtown Bentonville | Fried Chicken, Oysters, Caviar & Brunch",
+  description:
+    "Downtown Bentonville champagne bar serving oysters, caviar, fried chicken, and weekend brunch. Reserve your table at Muselet.",
   openGraph: {
     title: "Muselet Champagne Bar",
     description: "Explore our curated champagne menu and reserve your table.",
     type: "website",
     locale: "en_US",
     siteName: "Muselet Champagne Bar",
-    url: "https://your-vercel-domain.vercel.app",
   },
   twitter: {
     card: "summary_large_image",
     title: "Muselet Champagne Bar",
     description: "Bentonville's premiere champagne destination.",
-    site: "@muselet",
   },
   robots: {
     index: true,
@@ -50,6 +50,10 @@ export default function RootLayout({
         />
       </head>
       <body className="font-serif antialiased" style={{ fontFamily: "'Montserrat', sans-serif" }}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildLocalBusinessSchema()).replace(/</g, "\\u003c") }}
+        />
         <Suspense fallback={null}>{children}</Suspense>
         <Analytics />
       </body>

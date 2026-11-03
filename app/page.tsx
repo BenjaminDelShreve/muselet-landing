@@ -11,12 +11,17 @@ import type { Metadata } from "next"
 export const dynamic = "force-dynamic"
 
 export const metadata: Metadata = {
-  title: "Muselet Champagne Bar - Bentonville's Premier Champagne Destination",
-  description: "Experience the finest champagne and caviar in Bentonville, Arkansas. Reserve your table for an intimate champagne experience.",
+  title: "Muselet | Champagne Bar & Kitchen in Downtown Bentonville | Fried Chicken, Oysters, Caviar & Brunch",
+  description:
+    "Downtown Bentonville champagne bar serving oysters, caviar, fried chicken, and weekend brunch. Reserve your table at Muselet.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Muselet Champagne Bar",
     description: "Bentonville's premier champagne destination. Reserve your table today.",
     type: "website",
+    url: "/",
     siteName: "Muselet Champagne Bar",
     locale: "en_US",
   },
