@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react"
+import { Instagram, Mail, Phone, MapPin } from "lucide-react"
 
 export function Footer() {
   return (
@@ -55,25 +55,19 @@ export function Footer() {
           </div>
 
           {/* Social Media */}
-          <div>
-            <h3 className="text-xl font-medium mb-6 text-[#AF911C] tracking-wide">Follow Us</h3>
-            <div className="flex gap-4">
-              <a
-                href="https://www.instagram.com/muselet.nwa/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 bg-[#FDF8F0]/10 hover:bg-[#AF911C] rounded-full flex items-center justify-center transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="https://www.facebook.com/search/top?q=muselet%20champagne%20bar"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 bg-[#FDF8F0]/10 hover:bg-[#AF911C] rounded-full flex items-center justify-center transition-colors"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
+          <div className="flex flex-col items-start">
+            <div className="inline-flex flex-col items-center">
+              <h3 className="text-xl font-medium mb-6 text-[#AF911C] tracking-wide">Follow Us</h3>
+              <div className="flex justify-center gap-4">
+                <a
+                  href="https://www.instagram.com/muselet.nwa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-[#FDF8F0]/10 hover:bg-[#AF911C] rounded-full flex items-center justify-center transition-colors"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
