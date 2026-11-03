@@ -7,7 +7,7 @@ import "./globals.css"
 import { buildLocalBusinessSchema } from "@/lib/structured-data"
 
 export const metadata = {
-  metadataBase: new URL("https://your-vercel-domain.vercel.app"), // 👈 we'll update this later
+  metadataBase: new URL("https://www.museletchampagnebar.com"),
   title: "Muselet Champagne Bar",
   description: "Champagne, caviar, and elegance in the heart of Bentonville.",
   openGraph: {
@@ -16,7 +16,6 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Muselet Champagne Bar",
-    url: "https://your-vercel-domain.vercel.app",
   },
   twitter: {
     card: "summary_large_image",

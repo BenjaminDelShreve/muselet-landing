@@ -2,6 +2,23 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Bubbles } from "@/components/bubbles"
 import { OPENTABLE_URL } from "@/lib/reservations"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Reservations | Muselet Champagne Bar",
+  description: "Reserve your table at Muselet Champagne Bar in downtown Bentonville, Arkansas.",
+  alternates: {
+    canonical: "/reservations",
+  },
+  openGraph: {
+    title: "Reservations | Muselet Champagne Bar",
+    description: "Reserve your table at Muselet Champagne Bar in downtown Bentonville, Arkansas.",
+    type: "website",
+    url: "https://www.museletchampagnebar.com/reservations",
+    siteName: "Muselet Champagne Bar",
+    locale: "en_US",
+  },
+}
 
 export default function ReservationsPage() {
   return (
