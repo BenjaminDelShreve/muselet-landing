@@ -7,3 +7,8 @@ export const HOURS = [
   { day: "Saturday", time: "11:00 AM – 11:00 PM" },
   { day: "Sunday", time: "10:00 AM – 2:00 PM" },
 ] as const
+
+export const BRUNCH_HOURS = [
+  { day: "Saturday", time: "11:00 AM – 3:00 PM" },
+  { day: "Sunday", time: "10:00 AM – 2:00 PM" },
+] as const

@@ -1,4 +1,4 @@
-import { HOURS } from "@/lib/hours"
+import { BRUNCH_HOURS, HOURS } from "@/lib/hours"
 
 export const SITE_URL = "https://www.museletchampagnebar.com"
 
@@ -10,16 +10,22 @@ function to24Hour(value: string): string {
   return `${String(hours).padStart(2, "0")}:${match[2]}`
 }
 
+function toSpecification(day: string, time: string, name?: string) {
+  const [opens, closes] = time.split(/\s*[–-]\s*/)
+  return {
+    "@type": "OpeningHoursSpecification",
+    ...(name ? { name } : {}),
+    dayOfWeek: day,
+    opens: to24Hour(opens),
+    closes: to24Hour(closes),
+  }
+}
+
 function buildOpeningHoursSpecification() {
-  return HOURS.filter((entry) => entry.time !== "Closed").map((entry) => {
-    const [opens, closes] = entry.time.split(/\s*[–-]\s*/)
-    return {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: entry.day,
-      opens: to24Hour(opens),
-      closes: to24Hour(closes),
-    }
-  })
+  return [
+    ...HOURS.filter((entry) => entry.time !== "Closed").map((entry) => toSpecification(entry.day, entry.time)),
+    ...BRUNCH_HOURS.map((entry) => toSpecification(entry.day, entry.time, "Brunch")),
+  ]
 }
 
 export function buildLocalBusinessSchema() {
