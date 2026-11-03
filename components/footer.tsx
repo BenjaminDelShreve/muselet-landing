@@ -55,17 +55,19 @@ export function Footer() {
           </div>
 
           {/* Social Media */}
-          <div>
-            <h3 className="text-xl font-medium mb-6 text-[#AF911C] tracking-wide">Follow Us</h3>
-            <div className="flex gap-4">
-              <a
-                href="https://www.instagram.com/muselet.nwa/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 bg-[#FDF8F0]/10 hover:bg-[#AF911C] rounded-full flex items-center justify-center transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
+          <div className="flex flex-col items-start">
+            <div className="inline-flex flex-col items-center">
+              <h3 className="text-xl font-medium mb-6 text-[#AF911C] tracking-wide">Follow Us</h3>
+              <div className="flex justify-center gap-4">
+                <a
+                  href="https://www.instagram.com/muselet.nwa/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-[#FDF8F0]/10 hover:bg-[#AF911C] rounded-full flex items-center justify-center transition-colors"
+                >
+                  <Instagram className="w-5 h-5" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
