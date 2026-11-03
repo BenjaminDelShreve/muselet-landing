@@ -5,6 +5,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
+import { OPENTABLE_URL } from "@/lib/reservations"
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -108,9 +109,9 @@ export function Navigation() {
 
         {/* Desktop Reserve Button */}
         <Button asChild className="hidden md:flex bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#AF911C]/25">
-          <Link href="/reservations">
+          <a href={OPENTABLE_URL} target="_blank" rel="noopener noreferrer">
             Reserve Now
-          </Link>
+          </a>
         </Button>
 
         {/* Mobile Hamburger Menu Button */}
@@ -195,12 +196,14 @@ export function Navigation() {
             </button>
             <div className="pt-4 border-t border-[#AF911C]/20">
               <Button asChild className="w-full bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide transition-all duration-300">
-                <Link
-                  href="/reservations"
+                <a
+                  href={OPENTABLE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Reserve Now
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { Bubbles } from "@/components/bubbles"
+import { OPENTABLE_URL } from "@/lib/reservations"
 
 export default function ReservationsPage() {
   return (
@@ -22,7 +23,7 @@ export default function ReservationsPage() {
 
           <div className="flex justify-center">
             <a
-              href="https://www.opentable.com/restref/client/?rid=1498192"
+              href={OPENTABLE_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-[#AF911C] text-[#303030] hover:bg-[#AF911C]/90 font-medium tracking-wide text-lg px-12 py-4 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-[#AF911C]/25 rounded-md"
