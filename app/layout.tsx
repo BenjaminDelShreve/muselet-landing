@@ -8,8 +8,9 @@ import { buildLocalBusinessSchema } from "@/lib/structured-data"
 
 export const metadata = {
   metadataBase: new URL("https://www.museletchampagnebar.com"),
-  title: "Muselet Champagne Bar",
-  description: "Champagne, caviar, and elegance in the heart of Bentonville.",
+  title: "Muselet | Champagne Bar & Kitchen in Downtown Bentonville | Fried Chicken, Oysters, Caviar & Brunch",
+  description:
+    "Downtown Bentonville champagne bar serving oysters, caviar, fried chicken, and weekend brunch. Reserve your table at Muselet.",
   openGraph: {
     title: "Muselet Champagne Bar",
     description: "Explore our curated champagne menu and reserve your table.",
