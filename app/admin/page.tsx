@@ -1,10 +1,15 @@
 import { AdminMenu } from "@/components/admin-menu"
+import type { Metadata } from "next"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Menu Admin | Muselet",
   robots: {
     index: false,
     follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
   },
 }
 

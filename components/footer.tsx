@@ -81,14 +81,6 @@ export function Footer() {
               museletchampagnebar.com
             </a>
           </p>
-          <p className="mt-4">
-            <Link
-              href="/admin"
-              className="text-[10px] tracking-wide text-[#FDF8F0]/25 hover:text-[#FDF8F0]/45 transition-colors"
-            >
-              Admin
-            </Link>
-          </p>
         </div>
       </div>
     </footer>
