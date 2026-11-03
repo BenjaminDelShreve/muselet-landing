@@ -21,7 +21,6 @@ export const metadata = {
     card: "summary_large_image",
     title: "Muselet Champagne Bar",
     description: "Bentonville's premiere champagne destination.",
-    site: "@muselet",
   },
   robots: {
     index: true,
