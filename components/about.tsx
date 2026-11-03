@@ -67,10 +67,10 @@ export function About() {
         <div className="mt-16">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-[#303030] mb-6 leading-relaxed text-center">
-              Aaron's journey to Muselet is a story of culinary discovery, from the Rockies to the tropics and back again. It began at the Escoffier School of Culinary Arts in Boulder, Colorado, where a passion for food was ignited. This led to a unique opportunity as a private chef in Hawaii, where they spent four years crafting memorable meals.
+              Aaron's journey to Muselet is a story of culinary discovery, from the Rockies to the tropics and back again. It began at the Escoffier School of Culinary Arts in Boulder, Colorado, where a passion for food was ignited. This led to a unique opportunity as a private chef in Hawaii, where he spent four years crafting memorable meals.
             </p>
             <p className="text-lg text-[#303030] mb-8 leading-relaxed text-center">
-              Upon returning to Little Rock, he explored a new path in wine retail. Traveling and expanding their knowledge of wine regions, they discovered a profound love for Champagne—a drink that represents celebration, joy, and craftsmanship. Muselet was born from this love, a place where he can share the magic of Champagne with you.
+              Upon returning to Little Rock, he explored a new path in wine retail. Traveling and expanding his knowledge of wine regions, he discovered a profound love for Champagne—a drink that represents celebration, joy, and craftsmanship. Muselet was born from this love, a place where he can share the magic of Champagne with you.
             </p>
           </div>
         </div>
